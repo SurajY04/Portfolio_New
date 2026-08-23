@@ -1,5 +1,9 @@
 import React from 'react'
 import Contact from './Contact'
+import Project_1 from '../assets/project-1.png'
+import Project_2 from '../assets/project-2.png'
+import Project_3 from '../assets/project-3.png'
+
 
 
 const Project = () => {
@@ -27,7 +31,7 @@ const Project = () => {
             <button><h4><a href="https://di-out-planner.vercel.app/">Visit</a></h4></button>
           </div>
           <div id="project-right">
-            <img src="./src/assets/project-1.png" alt="" />
+            <img src={Project_1} alt="" />
           </div>
         </div>
         <div id="project">
@@ -36,7 +40,7 @@ const Project = () => {
             <button><h4><a href="https://zesty-panda-66ec5a.netlify.app/">Visit</a></h4></button>
           </div>
           <div id="project-right">
-            <img src="./src/assets/project-2.png" alt="" />
+            <img src={Project_2} alt="" />
           </div>
         </div>
         <div id="project">
@@ -45,7 +49,7 @@ const Project = () => {
             <button><h4><a href="https://banking-project04.netlify.app/">Visit</a></h4></button>
           </div>
           <div id="project-right">
-            <img src="./src/assets/project-3.png" alt="" />
+            <img src={Project_3} alt="" />
           </div>
         </div>
       </div>

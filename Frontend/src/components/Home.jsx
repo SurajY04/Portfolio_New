@@ -3,6 +3,11 @@ import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import Contact from './Contact'
+import HeroImage from '../assets/mine.png'
+import Mobile from '../assets/mobile.png'
+import Email from '../assets/email.png'
+import Loaction from '../assets/location.png'
+import Bottom from '../assets/bottom.png'
 
 const Home = () => {
     gsap.registerPlugin(ScrollTrigger)
@@ -78,21 +83,21 @@ const Home = () => {
                     <div id="home-box-3"><h3>Creative technologist. Architecting robust digital experiences with rigorous attention to detail and performance.</h3></div>
                     <div id="home-box-4">
                         <div id="box-4_01">
-                            <img src="./src/assets/mobile.png" alt="" />
+                            <img src={Mobile} alt="" />
                             <h4>8887591883</h4>
                         </div>
                         <div id="box-4_02">
-                            <img src="./src/assets/email.png" alt="" />
+                            <img src={Email} alt="" />
                             <h4>sy844662@gmail.com</h4>
                         </div>
                     </div>
                     <div id="home-box-5">
-                        <img src="./src/assets/location.png" alt="" />
+                        <img src={Loaction} alt="" />
                         <h4>Varanasi</h4>
                     </div>
                 </div>
                 <div id="home-main-upper-right">
-                    <img src="./src/assets/mine.png" />
+                    <img src={HeroImage} />
                 </div>
             </div>
             <div id="home-main-middle">
@@ -149,7 +154,7 @@ const Home = () => {
                         <h4>A creative mindset with never-ending ideas for utilizing self-potential. Approaching problems not just as tasks, but as architectural puzzles waiting for optimal design.</h4>
                     </div>
                     <div id="bottom-3-lower-right">
-                        <img src="./src/assets/bottom.png" />
+                        <img src={Bottom} />
                     </div>
                 </div>
                 <div id="bottom-lower">
