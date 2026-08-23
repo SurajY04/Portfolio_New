@@ -7,12 +7,12 @@ export async function sendEmail(email, name, message) {
             {
                 sender: {
                     name: "Portfolio Contact Form",
-                    email: process.env.MY_EMAIL
+                    email: process.env.My_Email
                 },
 
                 to: [
                     {
-                        email: process.env.MY_EMAIL,
+                        email: process.env.My_Email,
                         name: "Portfolio Owner"
                     }
                 ],
