@@ -3,6 +3,7 @@ import React from 'react'
 import Home from './components/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Project from './components/Project'
+import MainVideo from './assets/video_6.mp4'
 
 const App = () => {
   useEffect(() => {
@@ -67,7 +68,7 @@ const App = () => {
           playsInline
 
         >
-          <source src="./src/assets/video_6.mp4" type="video/mp4" />
+          <source src={MainVideo} type="video/mp4" />
         </video>
         <BrowserRouter>
           <Routes>
