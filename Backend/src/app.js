@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin : 'https://portfolio-e3xu35yka-xf-orce.vercel.app'
+    origin : 'https://portfolio-new-orcin-pi.vercel.app/'
 }))
 
 app.post('/api/contact' , async (req , res) => {
