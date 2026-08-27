@@ -3,7 +3,6 @@ import React from 'react'
 import Home from './components/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Project from './components/Project'
-import MainVideo from './assets/video_6.mp4'
 
 const App = () => {
   useEffect(() => {
@@ -45,31 +44,10 @@ const App = () => {
     };
   }, []);
 
-  const videoRef = useRef(null)
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 2;
-    }
-
-  }, [])
-
-
 
   return (
 
         <div id="main" >
-        <video
-          ref={videoRef}
-          className="background-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-
-        >
-          <source src={MainVideo} type="video/mp4" />
-        </video>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
